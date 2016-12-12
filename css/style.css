@@ -1,0 +1,259 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  line-height: 1.6;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 40px auto 20px;
+  width: 250px;
+  position:relative;
+  top:10px;
+  left:150px;
+}
+.clock {
+  border: 5px solid #FFF;
+  border-radius: 100%;
+  display: block;
+  height: 150px;
+  width: 150px;
+  position: relative;
+}
+.clock .hour {
+  background: #fff;
+  height: 0;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  width: 0;
+  -webkit-transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  -o-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  margin: -40px -2px 0;
+  padding: 40px 2px 0;
+}
+.clock .minute {
+  background: #fff;
+  height: 0;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  width: 0;
+  -webkit-transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  -o-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  margin: -65px -2px 0;
+  padding: 65px 2px 0;
+}
+
+.DayNotes{
+	padding:30px;
+}
+#dateprint{
+	width: 100px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.datepicker {
+  width: 400px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.2);
+  margin: 50px auto;
+  overflow: hidden;
+}
+.datepicker .datepicker-header {
+  height: 250px;
+  background-image: url("https://d13yacurqjgara.cloudfront.net/users/247458/screenshots/2135645/minimalistic_low_poly_style_summer_wallpaper_vector_illustration._small_island_in_the_middle_of_the_ocean_reflecting_in_the_water._tiny_boat_approaching_the_land_on_the_moonlight._flat_design.jpg");
+  background-size: 100%;
+}
+.datepicker .ui-datepicker-inline {
+  padding: 30px;
+}
+.datepicker .ui-datepicker-header {
+  text-align: center;
+  padding-bottom: 1em;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+.datepicker .ui-datepicker-header .ui-datepicker-prev,
+.datepicker .ui-datepicker-header .ui-datepicker-next {
+  display: inline;
+  float: left;
+  cursor: pointer;
+  font-size: 1.4em;
+  padding: 0 10px;
+  margin-top: -10px;
+  color: #CCC;
+}
+.datepicker .ui-datepicker-header .ui-datepicker-next {
+  float: right;
+}
+.datepicker .ui-datepicker-calendar {
+  width: 100%;
+  text-align: center;
+}
+.datepicker .ui-datepicker-calendar thead {
+  color: #CCC;
+}
+.datepicker .ui-datepicker-calendar tr th, .datepicker .ui-datepicker-calendar tr td {
+  padding-bottom: .5em;
+}
+.datepicker .ui-datepicker-calendar a {
+  color: #444;
+  text-decoration: none;
+  display: block;
+  margin: 0 auto;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.datepicker .ui-datepicker-calendar .ui-state-highlight {
+  border-color: #D24D57;
+  color: #D24D57;
+}
+.EditButton{
+	    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/78060/edit.svg");
+    margin-top: 0.8em;
+	float: right;
+    background-color: transparent;
+    width: 35px;
+    height: 35px;
+    text-indent: -999em;
+    color: transparent;
+    border: none;
+    margin: .9em 1.3em .55em 0.2em;
+    outline: none;
+	position: relative;
+    right: 70px;
+    top: 15px;
+}
+.check {
+  width: 50px;
+  height: 50px;
+  background: #e5e5e5;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  position: relative;
+  top: 45px;
+  left: 90%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  -moz-box-shadow: 0px -4px 4px 0px rgba(255, 255, 255, 0.75), inset 0px 4px 4px 0px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0px -4px 4px 0px rgba(255, 255, 255, 0.75), inset 0px 4px 4px 0px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px -4px 4px 0px rgba(255, 255, 255, 0.75), inset 0px 4px 4px 0px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+}
+.check:before {
+  content: "";
+  background: #fff;
+  position: absolute;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  top: 9%;
+  left: 9%;
+  right: 9%;
+  bottom: 9%;
+  -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.08);
+}
+.check:after {
+  content: "";
+  position: absolute;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-color: #60b247;
+  border-width: 0;
+  border-style: solid;
+}
+.check .check-icon {
+  position: absolute;
+  z-index: 3;
+  top: 2%;
+  left: 28%;
+  width: 45%;
+  fill: #e5e5e5;
+}
+.check.active:after {
+  -moz-transition: ease-out 0.1s all;
+  -o-transition: ease-out 0.1s all;
+  -webkit-transition: ease-out 0.1s all;
+  transition: ease-out 0.1s all;
+  border-width: 25px;
+}
+.check.active .check-icon {
+  fill: #fff;
+  -moz-animation: bounce 0.2s;
+  -webkit-animation: bounce 0.2s;
+  animation: bounce 0.2s;
+  -moz-animation-delay: 0.08s;
+  -webkit-animation-delay: 0.08s;
+  animation-delay: 0.08s;
+}
+
+@-moz-keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
